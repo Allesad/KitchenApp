@@ -189,6 +189,7 @@
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include="KitchenApp_TemporaryKey.pfx" />
+    <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

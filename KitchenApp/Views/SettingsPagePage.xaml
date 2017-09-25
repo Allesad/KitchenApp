@@ -36,6 +36,9 @@
                         </ic:EventTriggerBehavior>
                     </i:Interaction.Behaviors>
                 </ToggleSwitch>
+
+                <Button Margin="15" Content="CRASH"
+                        Command="{x:Bind ViewModel.CrashCommand}"/>
             </StackPanel>
 
             <StackPanel Grid.Row="2" Margin="0,16,0,0">

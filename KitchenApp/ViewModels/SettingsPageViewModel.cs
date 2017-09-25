@@ -27,9 +27,12 @@ namespace KitchenApp.ViewModels
 
         public ICommand SwitchThemeCommand { get; private set; }
 
+        public ICommand CrashCommand { get; private set; }
+
         public SettingsPageViewModel()
         {
             SwitchThemeCommand = new RelayCommand(async () => { await ThemeSelectorService.SwitchThemeAsync(); });
+            CrashCommand = new RelayCommand(() => throw new InvalidOperationException("Intentional crash"));
         }
 
         public void Initialize()
